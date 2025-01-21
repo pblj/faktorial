@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<cmath>
 using namespace std;
 //#define Faktorial;
@@ -14,21 +14,21 @@ void main() {
 	int number, i;
 	unsigned long long previousValue = 0, result = 1;
 
-	cout << "Ââåäèòå ÷èñëî äëÿ ðàñ÷åòà ôàêòîðèàëà: "; cin >> number;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð´Ð»Ñ Ñ€Ð°ÑÑ‡ÐµÑ‚Ð° Ñ„Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð»Ð°: "; cin >> number;
 
 	for (i = 1; i <= number; i++) {
 
 		result *= i;
-		if (result < previousValue) //ïîøëî ïåðåïîëíåíèå ðàñ÷åò ìîæíî îñòàíàâëèâàòü
+		if (result < previousValue) //Ð¿Ð¾ÑˆÐ»Ð¾ Ð¿ÐµÑ€ÐµÐ¿Ð¾Ð»Ð½ÐµÐ½Ð¸Ðµ Ñ€Ð°ÑÑ‡ÐµÑ‚ Ð¼Ð¾Ð¶Ð½Ð¾ Ð¾ÑÑ‚Ð°Ð½Ð°Ð²Ð»Ð¸Ð²Ð°Ñ‚ÑŒ
 		{
-			cout << "Ââåäåíî ñëèøêîì áîëüøîå ÷èñëî, âû÷èñëèòü ôàêòîðèàë íå âîçìîæíî." << endl;
+			cout << "Ð’Ð²ÐµÐ´ÐµÐ½Ð¾ ÑÐ»Ð¸ÑˆÐºÐ¾Ð¼ Ð±Ð¾Ð»ÑŒÑˆÐ¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾, Ð²Ñ‹Ñ‡Ð¸ÑÐ»Ð¸Ñ‚ÑŒ Ñ„Ð°ÐºÑ‚Ð¾Ñ€Ð¸Ð°Ð» Ð½Ðµ Ð²Ð¾Ð·Ð¼Ð¾Ð¶Ð½Ð¾." << endl;
 			result = 0;
 			break;
 		}
 		previousValue = result;
 	}
 
-	cout << "Ðåçóëüòàò: " << result;
+	cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚: " << result;
 
 #endif // Faktorial
 
@@ -37,8 +37,8 @@ void main() {
 	int  i, degree;
 	double inputNumber, result;
 
-	cout << "Ââåäèòå ÷èñëî îñíîâàíèå: "; cin >> inputNumber; cout << endl;
-	cout << "Ââåäèòå ñòåïåíü: "; cin >> degree; cout << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð¾ Ð¾ÑÐ½Ð¾Ð²Ð°Ð½Ð¸Ðµ: "; cin >> inputNumber; cout << endl;
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÑÑ‚ÐµÐ¿ÐµÐ½ÑŒ: "; cin >> degree; cout << endl;
 	result = inputNumber;
 
 	for (i = 1; i < degree; i++) {
@@ -55,11 +55,10 @@ void main() {
 	int ch = 0;
 	for (int l = 0; l < 16; l++)
 	{
-	
 		for (int i = 0; i < 16; i++)
 		{
 			ASCII[ch] = ch;
-			cout  << ch << " = " << ASCII[ch] << "\t";
+			cout <<"|" << ch << " = " << ASCII[ch] << "|";
 			ch++;
 		}
 		cout << endl;
