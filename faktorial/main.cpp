@@ -1,5 +1,4 @@
 ﻿#include<iostream>
-#include<cmath>
 using namespace std;
 //#define Faktorial;
 //#define POW
